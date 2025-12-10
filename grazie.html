@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="scss/onUpdate.css">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(239, 239, 239);">
+    <div id="nuxt">
+    <div class="checked">
+        <input type="checkbox" id="_checkbox">
+        <label for="_checkbox">
+        <div id="tick_mark"></div>
+        </label>
+        <div id="messaggio">
+            <h2 style="color: black; margin-bottom: 6px;">Richiesta inviata con successo!</h2>
+            <p style="color: black; margin-bottom: 6px;">Grazie per avermi contattato! Riceverai risposta nel minor tempo possibile.</p>
+            <div class="btnContact">
+                <a href="index.html">Torna al sito</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            setTimeout(() => {
+                document.getElementById("_checkbox").checked = true;
+            }, 1200)
+            setTimeout(() => {
+                 document.getElementById('messaggio').style.visibility = "visible";
+            }, 1600)
+});
+    </script>
+</body>
+</html>

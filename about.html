@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="scss/onUpdate.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <title>Chi Sono</title>
+</head>
+<body>
+    <div id="nuxt">
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <h4 class="logotype">PIETRO</h4>
+                    </a>
+                </div>
+                <div class="menu">
+                    <div class="list">
+                        <a href="index.html">HOME</a>
+                        <a class="active"  href="about.html">CHI SONO</a>
+                        <a href="project.html">PROGETTI</a>
+                        <div class="btn">
+                            <a href="contatti.html">CONTATTAMI</a>
+                            <span class="arrow">
+                             <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z" fill="#ffffff" fill-rule="nonzero"/>
+                            </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menuMobile">
+                <div class="hamburger hamburger--collapse" tabindex="0"
+                    aria-label="Menu" role="button" aria-controls="navigation">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+                </div>
+                </div>
+            </div>
+            <div class="tendina">
+                <div class="listMenu">
+                    <li class="voice"><a href="index.html">HOME</a></li>
+                    <li class="voice"><a href="#">CHI SONO</a></li>
+                    <li class="voice"><a href="#">PROGETTI</a></li>
+                </div>
+                 <div class="btn" id="btnMobile">
+                    <a href="contatti.html">CONTATTAMI</a>
+                     <span class="arrowMobile">
+                     <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z" fill="#ffffff" fill-rule="nonzero"/>
+                    </svg>
+                    </span>
+                </div>
+            </div>
+        </header>
+        <div class="homepage reduce">
+            <div class="backAbout">
+                <div class="overlay"></div>
+            </div>
+            <div class="container">
+                    <div class="wrapper">
+                    <div class="wrapText">
+                        <div class="textLeft max">
+                            <h6>Un pò di me</h3>
+                            <h1 class="bigFont">Conosciamoci</h1>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+        <div class="project">
+        <div class="container">
+            <div class="wrapText">
+                <div class="textLeft">
+                        <h6 style="color: var(--orange); margin-bottom: 10px;">CHI SONO</h3>
+                        <h1>Progettare con intenzione e identità.</h1>
+                </div>
+                <div class="textRight">
+                        <div class="slot">
+                            <h5 style="margin-bottom: 30px; color: #fff;">Aiuto i brand a raccontarsi con autenticità attraverso strategia, design e collaborazione.</h5>
+                        </div>
+                        <div class="slot1">
+                            <p style="color: var(--grey); margin-bottom: 10px;">Sono uno sviluppatore che crede nel potere del design come linguaggio capace di costruire connessioni reali. Unisco analisi e creatività per creare identità visive che riflettano valori, visione e personalità. Per me il design non è solo estetica: è chiarezza, significato e impatto.</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="idee">
+            <div class="container">
+                <div class="wrapMessage">
+                    <h2 class="bigFont">Trasforma ciò che hai in qualcosa di ancora più grande</h3>
+                </div>
+                <div class="wrapInfo">
+                    <div class="text">
+                        <h2>Dall’idea al risultato</h2>
+                    </div>
+                    <div class="scissor">
+                        <div class="item slick1">
+                            <img src="media/pizza.png" alt="">
+                        </div>
+                        <div class="item slick2">
+                            <img src="media/lente.png" alt="">
+                        </div>
+                        <div class="item slick3">
+                            <img src="media/frame_ui.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lavori">
+            <div class="container">
+                <div class="wrapText">
+                <div class="textLeft">
+                        <h6 style="color: var(--orange); margin-bottom: 10px;">LAVORI RECENTI</h3>
+                        <h1>Ultimi progetti e collaborazioni</h1>
+                </div>
+                <div class="textRight">
+                        <div class="slot">
+                            <h5 style="margin-bottom: 30px; color: #fff;">Un viaggio tra i lavori più recenti: esperienze, storie e identità costruite insieme.</h5>
+                        </div>
+                </div>
+                </div>
+                <div class="wrapper">
+                    <div class="description">
+                        <h6 style="margin-bottom: 6px;">SVILUPPATORE FRONTEND</h6>
+                        <h4 style="margin-bottom: 6px;">ALCOTT & GUTTERIDGE</h4>
+                        <p>Collaborazione dedicata allo sviluppo e all’ottimizzazione dell’esperienza digitale del brand.</p>
+                    </div>
+                    <div class="date"><h6>ad Oggi</h6></div>
+                </div>
+                <div class="wrapper">
+                    <div class="description">
+                        <h6 style="margin-bottom: 6px;">FULL STACK DEVELOPER</h6>
+                        <h4 style="margin-bottom: 6px;">DIGITAZON</h4>
+                       <p>Un percorso che ha consolidato il mio approccio strategico e creativo al design, trasformando la teoria in progetti reali e concreti.</p>
+                    </div>
+                    <div class="date"><h6>2023 / 24</h6></div>
+                </div>
+                <div class="wrapper">
+                    <div class="description">
+                        <h6 style="margin-bottom: 6px;">WEB DESIGNER</h6>
+                        <h4 style="margin-bottom: 6px;">ADINFO DIGITAL SOLUTIONS</h4>
+                        <p>Dall’idea al codice: trasformare design e visione in esperienze digitali concrete e performanti.</p>
+                    </div>
+                    <div class="date"><h6>2020 / 21</h6></div>
+                </div>
+                <div class="wrapper">
+                    <div class="description">
+                        <h6 style="margin-bottom: 6px;">WEB & GRAPHIC DESIGNER</h6>
+                        <h4 style="margin-bottom: 6px;">ILAS ACADEMY</h4>
+                        <p>Master in Web & Graphic Designer. Approfondimento su brand identity e comunicazione digitale.</p>
+                    </div>
+                    <div class="date"><h6>2019 / 20</h6></div>
+                </div>
+            </div>
+        </div>
+        <footer>
+        <div class="container">
+            <div class="wrap">
+                <a href="#">
+                    <h5 style="margin-bottom: 10px;">PIETRO</h5>
+                </a>
+                <h6 style="margin-bottom: 10px;">Un buon design dovrebbe risultare invisibile.</h6>
+                <p style="color: var(--grey); margin-bottom: 15px;">Sono un product designer concentrato sulla creazione di interfacce pulite e intuitive che risolvono problemi del mondo reale.</p>
+                <div class="btn" style="margin-bottom: 15px;">
+                <a href="contatti.html">CONTATTAMI</a>
+                <span class="arrow">
+                 <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z" fill="#ffffff" fill-rule="nonzero"/>
+                </svg>
+                </span>
+                </div>
+                <p style="color: var(--grey);">© 2025 Pietro Peluso. All rights reserved.</p>
+            </div>
+            <div class="wrap flex">
+               <ul class="lista">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">CHI SONO</a></li>
+                    <li><a href="project.html">PROGETTI</a></li>
+                    <li><a href="contatti.html">CONTATTI</a></li>
+                </ul>
+                <ul class="lista">
+                    <li><a>SOCIAL</a></li>
+                    <li>
+                        <svg class="iconSocial" width="20" height="20" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M29.25 -2.79099e-05L35.6869 -6.10352e-05C36.1516 2.32373 37.4419 5.25538 39.6989 8.16376C41.9103 11.0135 44.8406 13 48.75 13V19.5C43.0515 19.5 38.7694 16.8559 35.75 13.557V35.75C35.75 44.7246 28.4746 52 19.5 52C10.5254 52 3.25 44.7246 3.25 35.75C3.25 26.7753 10.5254 19.5 19.5 19.5V26C14.1152 26 9.75 30.3652 9.75 35.75C9.75 41.1348 14.1152 45.5 19.5 45.5C24.8848 45.5 29.25 41.1347 29.25 35.75V-2.79099e-05Z" fill="white"/>
+                        </svg><a href="https://www.tiktok.com/@pietropeluso3?is_from_webapp=1&sender_device=pc">TIK TOK</a>
+                    </li>
+                    <li>
+                        <svg class="iconSocial" width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="#ffffff" fill-rule="evenodd">
+                    <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7439.000000)" fill="#ffffff">
+                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                    <path d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792" id="instagram-[#167]"></path></g></g></g>
+                    </svg><a href="https://www.instagram.com/_pietropeluso_/">INSTAGRAM</a>
+                    </li>
+                    <li><svg class="iconSocial" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="20px" fill="white" height="20px" viewBox="0 0 470.513 470.513" style="enable-background:new 0 0 470.513 470.513;"
+                    xml:space="preserve"><g><path d="M271.521,154.17v-40.541c0-6.086,0.28-10.8,0.849-14.13c0.567-3.335,1.857-6.615,3.859-9.853
+                        c1.999-3.236,5.236-5.47,9.706-6.708c4.476-1.24,10.424-1.858,17.85-1.858h40.539V0h-64.809c-37.5,0-64.433,8.897-80.803,26.691
+                        c-16.368,17.798-24.551,44.014-24.551,78.658v48.82h-48.542v81.086h48.539v235.256h97.362V235.256h64.805l8.566-81.086H271.521z"/></g><g></g><g></g><g></g><g></g>
+                        <g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg><a href="https://www.facebook.com/peluso.pietro.1/">FACEBOOK</a></li>
+                </ul>
+            </div>
+        </div>
+        </footer>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
