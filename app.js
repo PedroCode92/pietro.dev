@@ -165,13 +165,25 @@ const tendina = document.querySelector('.tendina');
 const logo = document.querySelector('.logotype');
 const voiceElems = document.querySelectorAll('.voice');
 const arrowMobile = document.querySelector('.arrowMobile');
-
+let scrollY = 0;
+function blockScroll() {
+  scrollY = window.scrollY;
+  document.body.style.position = "fixed";
+  document.body.style.top = `-${scrollY}px`;
+  document.body.style.width = "100%";
+}
+function enableScroll() {
+  document.body.style.position = "";
+  document.body.style.top = "";
+  window.scrollTo(0, scrollY);
+}
 hamburger.addEventListener('click', function () {
   hamburger.classList.toggle('is-active');
   tendina.classList.toggle('openMenu');
 
   setTimeout(() => {
     if (tendina.classList.contains('openMenu')) {
+      blockScroll();
       logo.classList.add('colorBlack');
       hamburger.classList.add('hamburger-dark');
       arrowMobile.classList.add('expanded');
@@ -182,6 +194,7 @@ hamburger.addEventListener('click', function () {
               logo.classList.remove('colorBlack');
               hamburger.classList.remove('hamburger-dark', 'is-active');
               arrowMobile.classList.remove('expanded');
+              enableScroll();
         })
         setTimeout(() => {
           item.classList.add('visibility');
@@ -189,7 +202,7 @@ hamburger.addEventListener('click', function () {
       });
 
     } else {
-      // chiusura
+      enableScroll();
       logo.classList.remove('colorBlack');
       hamburger.classList.remove('hamburger-dark');
       arrowMobile.classList.remove('expanded');
